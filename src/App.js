@@ -13,7 +13,7 @@ function App() {
   };
 
   const obtenerAPI = async (movie) => {
-    const url = `http://www.omdbapi.com/?s=${movie}&plot=full&${API_KEY}`;
+    const url = `https://www.omdbapi.com/?s=${movie}&plot=full&${API_KEY}`;
     const respuesta = await fetch(url);
     const resultado = await respuesta.json();
 
